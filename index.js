@@ -1,8 +1,9 @@
 const express = require("express");
 const app = express();
+app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.sendfile(__dirname + "/pages/index.html");
+  res.sendfile(__dirname + "/index.html");
 });
 
 app.listen(3000, function () {
