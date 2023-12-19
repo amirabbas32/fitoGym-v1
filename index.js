@@ -7,11 +7,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/traineeLogin", (req, res) => {
-  res.sendfile(__dirname + "/traineeLogin.html");
+  res.sendfile(__dirname + "/public/traineeLogin.html");
 });
 
 app.get("/trainerLogin", (req, res) => {
-  res.sendfile(__dirname + "/trainerLogin.html");
+  res.sendfile(__dirname + "/public/trainerLogin.html");
 });
 
 app.listen(3000, function () {
